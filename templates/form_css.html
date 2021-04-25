@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Churn Prediction</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='main.css' )}}
+    
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="{{ url_for('predict')}}"method="post">
+        <div class="banner">
+          <h1>Predict if a Customer will Churn !</h1>
+        </div>
+        
+        <div class="colums">
+          <div class="item">
+            <label for="fname"> Average Number of Songs Per Day<span>*</span></label>
+            <input id="fname" type="text" name="avgSongs" required/>
+          </div>
+          
+          <div class="item">
+            <label for="lname"> Average Number of Clicks Per Day<span>*</span></label>
+            <input id="lname" type="text" name="avgEvents" required/>
+          </div>
+          <div class="item">
+            <label for="address1">Number of Times Thumbs Up Hit<span>*</span></label>
+            <input id="address1" type="text"   name="thumbsup" required/>
+          </div>
+          <div class="item">
+            <label for="address2">Number of Times Thumbs Down Hit<span>*</span></label>
+            <input id="address2" type="text"   name="thumbsdown" required/>
+          </div>
+          <div class="item">
+            <label for="state">Number of Times Add-Friend Button Clicked<span>*</span></label>
+            <input id="state" type="text"   name="add_friend" required/>
+          </div>
+          <div class="item">
+            <label for="state">Date of Registration with App (yyyy-mm-dd)<span>*</span></label>
+            <input id="state" type="text"   name="reg_date" required/>
+          </div>
+          
+        </div>
+        <div class="question">
+          <label>Gender</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="M" id="radio_1" name="gender" required/>
+              <label for="radio_1" class="radio"><span>Male</span> </label>
+            </div>
+            <div>
+              <input  type="radio" value="F" id="radio_2" name="gender"/>
+              <label for="radio_2" class="radio"><span>Female</span></label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="question">
+            <label>Account Type</label>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="free" id="radio_4" name="level" required/>
+                <label for="radio_4" class="radio"><span>Free</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="paid" id="radio_5" name="level" >
+                <label for="radio_5" class="radio"><span>Paid</span></label>
+              </div>
+              
+            </div>
+          </div>
+  
+        
+        <h2>Sparkify App Churn Prediction</h2>
+        <input type="checkbox" name="checkbox1">
+        <label> Sparkify is a fictional digital music service, created by Udacity to simulate real-world companies such as Spotify or Pandora. On Sparkify, users can play songs with free plan or premium subscription plan, which offers advanced functionalities and is ad-free. The predictions are based on a model trained with 12 GB of data.</label>
+        <div class="btn-block">
+          <button type="submit" href="/">Submit</button>
+        </div>
+      
+      </form>
+    </div>
+  </body>
+</html>
