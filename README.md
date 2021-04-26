@@ -2,8 +2,8 @@
 
 Machine Learning on a Large 12 GB dataset with Pyspark. The dataset is provided Udacity and the link to S3 bucket is given below:
 
-*  [mini-sparkify-event-data (~150 MB)](s3n://udacity-dsnd/sparkify/mini_sparkify_event_data.json)
-* [sparkify-event-data (~12 GB)](s3n://udacity-dsnd/sparkify/sparkify_event_data.json)
+*  [mini-sparkify-event-data ~150 MB](s3n://udacity-dsnd/sparkify/mini_sparkify_event_data.json)
+* [sparkify-event-data ~12 GB](s3n://udacity-dsnd/sparkify/sparkify_event_data.json)
 
 ## About
 
