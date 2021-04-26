@@ -22,7 +22,7 @@ to create the model:
 
 Data is the log of all activity on Sparkify. Two datasets are used
 
-* sparkify_event_data.json – large dataset with 26 million records
+* sparkify_event_data.json – large dataset with `26 million records`
 
 * mini_sparkify_event_data.json – a tiny subset of the full dataset, which is useful for preliminary data analysis. 
 
@@ -52,8 +52,8 @@ Both files contain the following data:
 ### Files and Folder Description
 
 * churn-prediction.ipynb : Exploratory Data Analysis, Feature Engineering and Classification using the `mini-event-sparkify-data` on my local system.
-* reference.ipynb : Feature Engineering and model training on AWS EMR with `mini-event-sparkify-data` with 1 m5.xlarge node cluster. This is used as a reference for training with large data.
-* training-aws-emr.ipynb : Actual training on the large `event-sparkify-data` with 5 m4.xlarge node cluster
+* reference.ipynb : Feature Engineering and model training on AWS EMR with `mini-event-sparkify-data` with `1 m5.xlarge node` cluster. This is used as a reference for training with large data.
+* training-aws-emr.ipynb : Actual training on the large `event-sparkify-data` with `5 m4.xlarge node` cluster
 * run.py : script to run the flask application
 * errors.py : script to handle errors in user input
 * df_ml.xlsx : dataset engineered from `event-sparkify-data` which has 1 row of information per user. This is the data that is used for actual model training.
@@ -112,6 +112,6 @@ I tried training with two models Gradient Boosted Trees and Random Forest, and h
 
 Some improvements that can be made are :
 
-* Using cross-validation and param-grid-builder to find out the best parameters 
-* Trying other models such as Neural Networks, Support Vector Machine etc
+* Using `cross-validation` and `param-grid-builder` to find out the best hyper-parameters 
+* Trying other models such as `Neural Networks`, `Support Vector Machine` etc
 * Extracting out new features that can predict churn better
