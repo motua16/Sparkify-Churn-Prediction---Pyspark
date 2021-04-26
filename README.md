@@ -1,4 +1,4 @@
-# Sparkify-Churn-Prediction-Pyspark
+# Sparkify-Churn-Prediction-PySpark
 
 Machine Learning on a Large 12 GB dataset with Pyspark. The dataset is provided Udacity and is publically available in the S3 buckets given below:
 
