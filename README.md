@@ -20,7 +20,7 @@ to create the model:
 
 ### Input Data
 
-Data is the log of all activity on Sparkify. Two datasets are used
+Data is the log of all activity on Sparkify (imaginary app like Spotify). Two datasets are used:
 
 * sparkify_event_data.json – large dataset with `26 million records`
 
