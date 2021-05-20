@@ -1,6 +1,6 @@
 # Sparkify-Churn-Prediction-PySpark
 
-Machine Learning on a Large 12 GB dataset with Pyspark. The dataset is provided Udacity and is publically available in the S3 buckets given below:
+Machine Learning on a Large 12 GB dataset with Pyspark. Sparkify is an imaginary app just like Spotify. The data consists of event logs. The dataset is provided Udacity and is publically available in the S3 buckets given below:
 
 * mini-sparkify-event-data (150 MB) - s3n://udacity-dsnd/sparkify/mini_sparkify_event_data.json
 * sparkify-event-data (12 GB) - s3n://udacity-dsnd/sparkify/sparkify_event_data.json
